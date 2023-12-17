@@ -1,0 +1,164 @@
+div {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+
+.main-background{
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/shoes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(90%);
+  padding: 1px;
+  position: relative;
+}
+.main_title{
+  color: white;
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.main_content{
+  color: white;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.main_btn{
+  padding: 10px;
+  font-size: 20px;
+  background: white;
+  border: none;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.info_box{
+  width: 60%;
+  max-width: 600px;
+  height: 150px;
+  margin: auto;
+  background-color: rgb(250, 247, 247);
+  padding: 20px;
+  position: relative;
+  top: -40px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.info_content{
+  color: black;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+input[type=text] {
+  padding:10px;
+  font-size: 20;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.explain-container{
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.explain-container>div {
+  float : left;
+  width : 25%;
+  text-align: center;
+}
+
+.explain-container i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 20px;
+}
+
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+.shop-container {
+  display: flex;
+  margin: auto
+}
+.shop-item{
+  width: 33%;
+  padding: 10px;
+}
+.shop-item img{
+  width: 100%;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 1s;
+}
+.overlay-wrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.overlay-black{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  margin-top: 100%;
+  transition: all 0.5s;
+}
+
+.overlay-wrap:hover .overlay-black{
+  margin-top: 50%;
+}
+
+@media screen and (max-width : 1200px) { 
+  .main_title { 
+    font-size : 30px; 
+  } 
+  .explain-container>div {
+    width: 50%;
+  }
+  .explain-container{
+    max-width: 600px;
+  }
+} 
+
+@media screen and (max-width : 768px) { 
+  .main_title { 
+    font-size : 30px; 
+  } 
+  .explain-container>div {
+    width: 100%;
+  }
+} 

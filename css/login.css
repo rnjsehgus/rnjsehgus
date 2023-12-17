@@ -1,0 +1,77 @@
+/* 내 폰트를 가져다가 쓸 수 있음 */
+@font-face {
+  font-family: 'nanumsquare';
+  src: url();
+}
+div, input, textarea {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'nanumsquare', 'gulim';
+}
+p,h4,h3,h2,h1,span {
+  transform: rotate(0.03deg);
+}
+.form-background{
+  background-color: black;
+  padding: 30px;
+}
+.form-white{
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form_input{
+ width:100%;
+ padding:10px;
+ font-size: 20px; 
+ border: 1px solid black;
+ border-radius: 5px;
+}
+.w-100{
+  width: 100%;
+  padding: 10px;
+}
+.w-50{
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+.yellow-btn{
+  padding: 10px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  background-color: rgba(255, 136, 0, 0.548);
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+}
+.nav-container {
+  display:flex;
+  height: 50px;
+  align-items: center;
+  padding: 10px;
+  /* flex-direction: row; 세로정렬 가로정렬*/
+  /* flex-wrap: wrap; 흘러넘침*/
+  /* align-items: center; */
+  justify-content: center;
+  background-color: darkorange;
+}
+.nav-item {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  margin-right: 10px;
+}
+.nav-text {
+  font-size:20px; 
+  margin-top: 15px; 
+  color: white;
+}
+

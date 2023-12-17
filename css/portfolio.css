@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'nanumsquare';
+  src: url();
+}
+
+div, input, textarea {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  /* font-family: 'nanumsquare', 'gulim'; */
+}
+
+.intro-container {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to top, #475ABD,#4997DC);
+}
+.intro-container-sub{
+  width: 100%; 
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.intro {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+.intro>div {
+  width: 70%; 
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: #444445;
+  border-radius: 5px;
+  border: none;
+  color: white; 
+  margin: auto;
+}
+.btn2{
+  width: 100px;
+  height: 40px;
+  background-color: #444445;
+  border-radius: 5px;
+  border: none;
+  color: white; 
+  margin: auto;
+}
+.phone {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.phone-image{
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.phone img{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-portfolio-container {
+  width: 100%;
+  height: 200px;
+}
+
+.offer-container{
+  width: 100%;
+  height: 300px;
+  background-color: #475ABD;
+  color: white;
+}
+
+.offer-container-title { 
+  width: 100%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer-container-title-text{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.offer-container-content {
+  width: 100%;
+  height: 70%;
+}
+
+.offer-container-content-inner {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.offer-container-content-inner>div{
+  float : left;
+  width : 25%;
+  text-align: center;
+  margin-top: 10px;
+}
+.offer-container-content-inner>div h4{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 15px
+}
+.offer-container-content-inner>div p{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 10px
+}
+
+.offer-container-content-inner>div>i {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  color: #475ABD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.show-container-intro {
+  width: 100%;
+  height: 100px;
+}
+
+.show-container-intro-text{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.portfolio {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.portfolio-item1 {
+  float: left;
+  width: 50%;
+  height: 350px;
+  background-size: cover;
+  border: 0px solid white ;
+  position : relative
+}
+
+.white-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index : 2;
+  border : 0px solid white;
+  transition: all 0.2s;
+}
+
+
+.white-box:hover{
+  border: 15px solid white ;
+}
+
+.portfolio-container {
+  text-align: left;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portfolio-text {
+  color: white;
+  padding: 50px;
+  width: 100%;
+} 
+
+.SNS-container {
+  width: 100%;
+  height: 200px;
+}
+
+.SNS-container-logo{
+  width: 300px;
+  height: 100%;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.SNS-container-logo>div{
+  float : left;
+  width : 33%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.SNS-container-logo>div>i {
+  background-color: #475ABD;;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  padding-top: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.make-who{
+  width: 100px;
+  text-align: center; 
+  font-size: 10px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+@media screen and (max-width : 1200px) {
+  .intro-container{
+    height: 600px;
+  } 
+  .intro-container-sub {
+    flex-direction: column; /* 요소를 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+
+  .intro {
+    width: 100%; /* 전체 너비로 확장 */
+    height: 50%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center; /* 텍스트 중앙 정렬 */
+  }
+ 
+  .btn {
+    float: left;
+  }
+  .phone {
+    height: 50%;
+    width: 100%; /* 전체 너비로 확장 */
+    margin-top: 0px; /* 위쪽 여백 추가 */
+  }
+
+} 
+
+@media screen and (max-width : 992px) { 
+  
+  .phone-image {
+    width: 70%; /* 이미지를 더 작게 조정 */
+  }
+
+  .portfolio-item1 {
+    width: 100%; /* 포트폴리오 항목을 전체 너비로 확장 */
+    float: none; /* float 제거 */
+  }
+  .offer-container-content-inner>div{
+    width : 25%;
+  }
+
+  .intro>div{
+    width: 90%;
+  }
+} 
